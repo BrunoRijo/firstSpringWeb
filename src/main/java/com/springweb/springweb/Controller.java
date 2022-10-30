@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
 		@GetMapping("/")
-		public String mensagem() {
-			return "Primeiro projeto Web utilizando o Spring Boot Web";
+		public String mensagem(String mensagem) {
+			return String.format("Bem vindo %s Primeiro projeto Web utilizando o Spring Boot Web", mensagem);
 		}
 }
